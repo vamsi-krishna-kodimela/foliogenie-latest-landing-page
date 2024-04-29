@@ -1,0 +1,30 @@
+.services {
+  padding-bottom: 40px;
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 24px;
+    &-item {
+      background-color: var(--secondary-color);
+      padding: 24px;
+      max-width: 16%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 16px rgba($color: #5271ff, $alpha: 0.2);
+      &__title {
+        font-family: "Montserrat", sans-serif;
+        color: var(--primary-color);
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0px 0px 8px;
+      }
+      &__description {
+        padding: 0px;
+        margin: 0px;
+        color: var(--text-color);
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

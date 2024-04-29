@@ -1,1 +1,15 @@
-<p>services works!</p>
+<div class="services standard-horizontal-padding">
+  <h3 class="section-title">What <span>We Do...</span></h3>
+  <div class="services__list">
+    @for (service of services; track $index) {
+    <div class="services__list-item">
+      <h4 class="services__list-item__title">
+        {{ service.title }}
+      </h4>
+      <p class="services__list-item__description">
+        {{ service.description }}
+      </p>
+    </div>
+    }
+  </div>
+</div>
