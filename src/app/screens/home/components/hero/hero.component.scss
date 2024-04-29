@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 40px;
+  &__text,
+  &__img {
+    flex: 1;
+  }
+  &__text {
+    &-pre {
+      padding: 0px;
+      margin: 0px;
+      color: var(--accent-color);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-title {
+      padding: 0px;
+      margin: 16px 0px 24px;
+      color: var(--text-color);
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 3.5rem;
+      text-transform: uppercase;
+      span {
+        color: var(--primary-color);
+      }
+    }
+    &-description {
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 80px;
+      color: var(--text-color);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-cta {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}
