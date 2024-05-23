@@ -1,7 +1,7 @@
 $primaryColor: #5271ff;
 $primaryDark: #1f47ff;
 $secondaryColor: #ffffff;
-$textColor: #101720;
+$textColor: rgb(22, 22, 22);
 $accentColor: #ff5271;
 $accentDark: #ff1f47;
 
@@ -9,7 +9,7 @@ $accentDark: #ff1f47;
   --primary-color: #5271ff;
   --primary-dark: #1f47ff;
   --secondary-color: #ffffff;
-  --text-color: #101720;
+  --text-color: rgb(22, 22, 22);
   --accent-color: #ff5271;
   --accent-dark: #ff1f47;
 }
@@ -34,19 +34,18 @@ body {
 }
 
 .btn {
-  height: 40px;
-  padding: 9px 24px;
-  border-radius: 20px;
+  padding: 10px 24px;
+  border-radius: 8px;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 1px solid var(--primary-dark);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: var(--primary-dark);
@@ -59,13 +58,13 @@ body {
 
     &:hover {
       background-color: rgba($color: $primaryDark, $alpha: 0.24);
-      border-color: rgba($color: $primaryColor, $alpha: 0.24);
+      border-color: rgba($color: $textColor, $alpha: 0.24);
     }
   }
 
   &--text {
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--text-color);
     border-color: transparent;
     text-decoration: underline;
     transition: color 0.3s;
@@ -77,8 +76,10 @@ body {
   }
 
   &--lg {
-    height: 56px;
-    border-radius: 28px;
+    height: auto;
+    border-radius: 8px;
+    padding: 16px 56px;
+    font-size: 1.24rem;
   }
 }
 

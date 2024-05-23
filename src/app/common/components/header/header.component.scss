@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, #5271ff -200%, #ffffff 64%);
 
   &__brand {
     &-title {
@@ -11,9 +10,9 @@
       padding: 0px;
       color: var(--text-color);
       font-family: "Montserrat", sans-serif;
-      font-size: 40px;
+      font-size: 1.24rem;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
 
       span {
         color: var(--primary-color);
@@ -30,11 +29,13 @@
     &-link {
       color: var(--text-color);
       font-family: "Montserrat", sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 500;
       line-height: normal;
       cursor: pointer;
+      opacity: 0.72;
+      transition: opacity 0.3s ease-in-out;
 
       &--selected {
         color: var(--primary-color);
@@ -42,7 +43,7 @@
       }
 
       &:hover {
-        color: var(--primary-color);
+        opacity: 1;
       }
     }
   }

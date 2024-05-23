@@ -1,50 +1,54 @@
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  gap: 40px;
-  &__text,
-  &__img {
-    flex: 1;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 24px;
+  background-color: rgba($color: #5271ff, $alpha: 0.4);
+  background-image: url("/assets/images/pattern.png");
+  background-repeat: repeat;
+  background-size: 600px;
+
+  &__pre-text {
+    padding: 0px;
+    margin: 0px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
-  &__text {
-    &-pre {
-      padding: 0px;
-      margin: 0px;
-      color: var(--accent-color);
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    &-title {
-      padding: 0px;
-      margin: 16px 0px 24px;
-      color: var(--text-color);
-      font-family: "Montserrat", sans-serif;
-      font-size: 3.5rem;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 3.5rem;
-      text-transform: uppercase;
-      span {
-        color: var(--primary-color);
-      }
-    }
-    &-description {
-      padding: 0px;
-      margin: 0px;
-      margin-bottom: 80px;
-      color: var(--text-color);
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    &-cta {
-      display: flex;
-      gap: 24px;
-    }
+
+  &__title {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+    font-size: 4.64rem;
+    line-height: 5rem;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Just Another Hand", cursive;
+    font-optical-sizing: auto;
   }
+
+  &__description {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__cta {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0px;
+  }
+
 }
