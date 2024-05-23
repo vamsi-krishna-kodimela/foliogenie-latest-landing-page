@@ -1,6 +1,6 @@
 $primaryColor: #5271ff;
 $primaryDark: #1f47ff;
-$secondaryColor: #f0f8ff;
+$secondaryColor: #ffffff;
 $textColor: #101720;
 $accentColor: #ff5271;
 $accentDark: #ff1f47;
@@ -8,7 +8,7 @@ $accentDark: #ff1f47;
 :root {
   --primary-color: #5271ff;
   --primary-dark: #1f47ff;
-  --secondary-color: #f0f8ff;
+  --secondary-color: #ffffff;
   --text-color: #101720;
   --accent-color: #ff5271;
   --accent-dark: #ff1f47;
@@ -23,6 +23,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   background-color: var(--secondary-color);
@@ -46,6 +47,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
   transition: background-color 0.3s;
+
   &:hover {
     background-color: var(--primary-dark);
   }
@@ -54,6 +56,7 @@ body {
     border-color: transparent;
     background-color: rgba($color: $primaryColor, $alpha: 0.24);
     color: $primaryColor;
+
     &:hover {
       background-color: rgba($color: $primaryDark, $alpha: 0.24);
       border-color: rgba($color: $primaryColor, $alpha: 0.24);
@@ -66,6 +69,7 @@ body {
     border-color: transparent;
     text-decoration: underline;
     transition: color 0.3s;
+
     &:hover {
       background-color: transparent;
       color: var(--primary-dark);
@@ -85,6 +89,7 @@ body {
   font-weight: 600 !important;
   margin: 80px 0px !important;
   text-align: center;
+
   span {
     color: var(--primary-color);
   }
