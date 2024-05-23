@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
   gap: 24px;
   background-color: rgba($color: #5271ff, $alpha: 0.16);
   background-image: url("/assets/images/pattern.png");
@@ -38,7 +38,7 @@
   &__description {
     padding: 0px;
     margin: 0px;
-    color: var(--text-color);
+    color: #161616;
     font-size: 1.24rem;
     font-style: normal;
     font-weight: 400;
@@ -49,7 +49,7 @@
   &__cta {
     display: flex;
     gap: 24px;
-    padding: 20px 0px;
+    padding: 40px 0px;
   }
 
 }

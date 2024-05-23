@@ -12,7 +12,7 @@ export class ServicesComponent {
     {
       icon: 'assets/icons/002-ux-design.svg',
       title: 'UX Design',
-      description: 'We design user experience for your business.',
+      description: 'We design user experience for your business. fill the form below to get started. And we will get back to you as soon as possible.',
     },
     {
       icon: 'assets/icons/003-web-development.svg',
