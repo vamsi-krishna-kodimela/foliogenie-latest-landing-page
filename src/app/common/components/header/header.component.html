@@ -3,10 +3,16 @@
     <h1 class="header__brand-title">Folio<span>Genie.</span></h1>
   </div>
   <ul class="header__nav">
-    <li class="header__nav-link">Home</li>
-    <li class="header__nav-link">Services</li>
-    <li class="header__nav-link">Community</li>
-    <li class="header__nav-link">Blog</li>
+    @for (item of menuItems; track $index) {
+    <li
+      class="header__nav-link"
+      [routerLink]="item.link"
+      [routerLinkActive]="['header__nav-link--selected']"
+    >
+      {{ item.label }}
+    </li>
+
+    }
   </ul>
   <div class="header__cta">
     <!-- <button class="btn btn--text">Sign In</button> -->
