@@ -1,0 +1,24 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Just Another Hand", cursive;
+    font-optical-sizing: auto;
+    letter-spacing: 0.1em;
+    margin: 0px auto 40px;
+    text-align: center;
+  }
+  &__video {
+    width: 100%;
+    aspect-ratio: 2;
+    border-radius: 16px;
+  }
+  &__cta {
+    margin: 0px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}

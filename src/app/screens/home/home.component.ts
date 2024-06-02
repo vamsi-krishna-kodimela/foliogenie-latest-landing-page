@@ -7,6 +7,7 @@ import { CareerGuidanceSectionComponent } from './components/career-guidance-sec
 import { BlogsSectionComponent } from './components/blogs-section/blogs-section.component';
 import { TemplatesSectionComponent } from './components/templates-section/templates-section.component';
 import { ResumeAnalyzerSectionComponent } from './components/resume-analyzer-section/resume-analyzer-section.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,7 @@ import { ResumeAnalyzerSectionComponent } from './components/resume-analyzer-sec
     BlogsSectionComponent,
     TemplatesSectionComponent,
     ResumeAnalyzerSectionComponent,
+    AboutSectionComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
