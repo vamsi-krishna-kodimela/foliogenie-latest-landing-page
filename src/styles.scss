@@ -31,7 +31,7 @@ body {
 }
 
 .standard-horizontal-padding {
-  padding: 0px 16%;
+  padding: 0px 12%;
 }
 
 .btn {
@@ -94,5 +94,17 @@ body {
 
   span {
     color: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .standard-horizontal-padding {
+    padding: 0px 8%;
+  }
+  .btn {
+    font-size: 0.8rem;
+    &--lg {
+      font-size: 1rem;
+    }
   }
 }

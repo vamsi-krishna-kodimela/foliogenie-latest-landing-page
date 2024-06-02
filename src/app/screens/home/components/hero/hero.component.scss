@@ -52,4 +52,13 @@
     padding: 40px 0px 0px;
   }
 
+  @media screen and (max-width: 1200px) {
+    .hero__title {
+      font-size: 3.64rem;
+      line-height: 4rem;
+    }
+    .hero__description {
+      font-size: 1rem;
+    }
+  }
 }
