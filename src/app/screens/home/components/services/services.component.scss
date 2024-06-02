@@ -23,14 +23,14 @@
           margin-bottom: 28px;
           border-radius: 8px;
           border: none;
-          background-color: #F2F2F2;
+          background-color: #f2f2f2;
           font-family: "Montserrat", sans-serif;
           font-size: 0.8rem;
           font-weight: 600;
-          color: #4F4F4F;
+          color: #4f4f4f;
 
           &:hover {
-            background-color: #E0E0E0;
+            background-color: #e0e0e0;
             cursor: pointer;
           }
         }
@@ -47,33 +47,26 @@
           font-family: "Montserrat", sans-serif;
           padding: 0px;
           margin: 0px;
-          color: #4F4F4F;
+          color: #4f4f4f;
           font-size: 1rem;
           line-height: 1.5;
           font-weight: 400;
         }
 
         &-points {
-          font-family: "Montserrat", sans-serif;
           padding: 0px;
           margin: 0px;
-          color: #4F4F4F;
-          font-size: 1rem;
-          line-height: 1.5;
-          font-weight: 400;
           list-style: none;
-
           li {
-            font-family: inherit;
-            font-size: 0.84rem;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1rem;
             position: relative;
             margin: 0px;
             padding: 0px;
             margin-top: 16px;
-            color: #4F4F4F;
+            color: #4f4f4f;
           }
         }
-
       }
 
       &__img {
@@ -89,14 +82,12 @@
           object-fit: cover;
           object-position: center;
           border-radius: 40px;
-
         }
       }
 
       &:nth-child(even) {
         flex-direction: row-reverse;
       }
-
     }
   }
 }
