@@ -55,4 +55,10 @@
     align-items: center;
     gap: 24px;
   }
+
+  @media screen and (max-width: 600px) {
+    .header__nav {
+      display: none;
+    }
+  }
 }

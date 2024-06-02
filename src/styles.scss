@@ -18,6 +18,10 @@ $accentDark: #ff1f47;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
+  scrollbar-width: 0px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 html,
@@ -101,7 +105,7 @@ body {
   .standard-horizontal-padding {
     padding: 0px 8%;
   }
-  .btn{
+  .btn {
     font-size: 0.8rem;
     &--lg {
       font-size: 1rem;

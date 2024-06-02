@@ -70,4 +70,13 @@
       line-height: 3.64rem;
     }
   }
+  @media screen and (max-width: 600px) {
+    .hero__title {
+      font-size: 2.64rem;
+      line-height: 3rem;
+    }
+    .hero__description {
+      font-size: 1rem;
+    }
+  }
 }

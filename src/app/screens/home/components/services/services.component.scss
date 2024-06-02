@@ -122,4 +122,11 @@
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    .services__list {
+      &-item {
+        flex-direction: column-reverse;
+      }
+    }
+  }
 }
