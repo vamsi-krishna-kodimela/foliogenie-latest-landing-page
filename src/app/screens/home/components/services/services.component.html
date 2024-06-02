@@ -4,29 +4,27 @@
     @for (service of services; track $index) {
     <div class="services__list-item">
       <div class="services__list-item__text">
-        <button class="services__list-item__text-cta">Content Ideation</button>
-        <h4 class="services__list-item__text-title">
+        <button class="services__list-item__text-cta">
           {{ service.title }}
+        </button>
+        <h4 class="services__list-item__text-title">
+          {{ service.sectionTitle }}
         </h4>
         <p class="services__list-item__text-description">
           {{ service.description }}
         </p>
         <ul class="services__list-item__text-points">
-          <li>
-            ✅ Dummy Point One
-          </li>
-          <li>
-            ✅ Dummy Point Two
-          </li>
-          <li>
-            ✅ Dummy Point Three
-          </li>
+          @for (highlight of service.highlights; track $index) {
+          <li>✅ {{ highlight }}</li>
+          }
         </ul>
       </div>
       <div class="services__list-item__img">
-        <img src="https://picsum.photos/id/237/200/300" alt="{{ service.title }}" />
+        <img
+          src="https://picsum.photos/id/237/200/300"
+          alt="{{ service.title }}"
+        />
       </div>
-
     </div>
     }
   </div>

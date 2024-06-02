@@ -8,31 +8,63 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss',
 })
 export class ServicesComponent {
-  services: { icon: string; title: string; description: string }[] = [
+  services: {
+    icon: string;
+    title: string;
+    sectionTitle: string;
+    description: string;
+    highlights: string[];
+  }[] = [
     {
       icon: 'assets/icons/002-ux-design.svg',
-      title: 'UX Design',
-      description: 'We design user experience for your business. fill the form below to get started. And we will get back to you as soon as possible.',
+      title: 'Mock Interviews',
+      sectionTitle:
+        'Master Your Interview Skills with AI-powered Mock Interviews',
+      description:
+        'Practice like a pro & get AI feedback. Upgrade for human coaches tailored to your industry.',
+      highlights: [
+        'Refine your interview skills.',
+        'Get instant insights.',
+        'Industry-specific coaching.',
+      ],
     },
     {
-      icon: 'assets/icons/003-web-development.svg',
-      title: 'Web Development',
-      description: 'We develop websites for your business.',
+      icon: 'assets/icons/002-ux-design.svg',
+      title: 'Resume Builder & Analyzer',
+      sectionTitle: 'Craft a Winning Resume with Our Builder & Analyzer',
+      description:
+        'Build a professional resume & get expert feedback to optimize for job applications.',
+      highlights: [
+        'Create a standout resume in minutes.',
+        'Expert feedback gets you noticed.',
+        'Receive actionable insights.',
+      ],
     },
     {
-      icon: 'assets/icons/004-mobile-apps.svg',
-      title: 'Mobile Apps',
-      description: 'We develop mobile apps for your business.',
+      icon: 'assets/icons/002-ux-design.svg',
+      title: 'Career Counseling',
+      sectionTitle:
+        'Find Your Perfect Path with Personalized Career Counseling',
+      description:
+        'Get one-on-one guidance to explore options, navigate transitions, and achieve your professional goals.',
+      highlights: [
+        'Find your perfect career fit.',
+        'Develop a personalized roadmap.',
+        'Support for career changes.',
+      ],
     },
     {
-      icon: 'assets/icons/005-seo.svg',
-      title: 'SEO',
-      description: 'We provide SEO services for your business.',
-    },
-    {
-      icon: 'assets/icons/006-marketing.svg',
-      title: 'Marketing',
-      description: 'We provide marketing services for your business.',
+      icon: 'assets/icons/002-ux-design.svg',
+      title: 'Workshops & Gamified Learning',
+      sectionTitle:
+        'Level Up Your Skills with Interactive Workshops & Gamified Learning',
+      description:
+        'Learn in-demand skills & career topics through engaging workshops & interactive experiences.',
+      highlights: [
+        'Workshops led by industry pros.',
+        'Stay motivated, learn fast.',
+        'Explore diverse career topics.',
+      ],
     },
   ];
 }
